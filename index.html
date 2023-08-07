@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark" class="scroll-smooth">
+
+<head>
+    <!-- Basic Page Needs -->
+    <meta charset="utf-8">
+    <title>Font Styler</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Developer">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <meta name="csrf-token" content="{{ csrf_token() }}" />
+    <meta http-equiv="content-language" content="ind">
+
+    <!-- Favicon -->
+    <!-- <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" /> -->
+
+    <!-- Main Stylesheet -->
+    <link href="public/css/custom.css" rel="stylesheet" type="text/css" />
+    <link href="public/css/app.css" rel="stylesheet" type="text/css" />
+    <link href="src/css/app.css" rel="stylesheet" type="text/css" />
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="public/js/app.js"></script>
+
+</head>
+
+<body class="min-h-screen">
+
+    <!-- Header start  -->
+    <div id="arya-fly-wrap">
+        <div id="arya-fly-menu-top" class="left relative pt-3">
+            <div class="arya-fly-top-out left relative">
+                <div class="arya-fly-top-in">
+                    <div id="arya-fly-logo" class="left relative logo">
+                        <!-- <a href="/"><img src="" class="" alt="r" /> -->
+                        <h1 class="text-2xl font-bold ">Font Styler</h1>
+                        </a>
+                    </div>
+                </div>
+                <div class="arya-fly-but-wrap arya-fly-but-menu arya-fly-but-click">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+        <div id="arya-fly-menu-wrap">
+            <nav class="arya-fly-nav-menu pt-6 left relative">
+                <div class="menu">
+                    <ul>
+                        <li class=""><a href="/">Home</a></li>
+                        <li class=""><a href="/about-site">About Site</a></li>
+                        <li class=""><a href="/privacy-policy">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div id="arya-fly-soc-wrap">
+            <!-- <span class="arya-fly-soc-head">Connect with us</span> -->
+            <ul class="arya-fly-soc-list left relative">
+            </ul>
+        </div>
+    </div>
+
+    <header>
+        <nav style="height: 50px;"
+            class="fixed mx-auto top-0 left-0 right-0 z-[500] shadow-xl flex bg-[#822c26] 2xl:px-[11%] xl:px-[11%] lg:px-[11%] md:px-[10rem] sm:px-10 px-5 ">
+            <!-- Left Navigation -->
+            <div class="flex-1 flex justify-center mr-auto">
+                <div id="" class="">
+                    <div id="arya-nav-bot-wrap" class="left">
+                        <div class="arya-nav-bot-left left relative">
+                            <div class="arya-fly-but-wrap arya-fly-but-click left relative">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Logo -->
+            <div class="">
+                <div class="">
+
+                    <a href="/">
+                        <!-- <img src=""
+                            class="w-16 md:w-18 lg:w-18 p-1 mt-1 md:mt-1 lg:mt-1 inline" alt="" /> -->
+                        <h1 class="mt-2 md:mt-0 lg:mt-0  p-1 font-bold text-white text-xl md:text-3xl lg:text-3xl  self-center"
+                            style="float: right;">Font Styler</h1>
+                    </a>
+
+                </div>
+            </div>
+            <!-- Right Navigation -->
+            <div class="flex-1 flex justify-center ml-auto">
+                <a class=""></a>
+            </div>
+        </nav>
+
+        <nav class="flex fixed w-screen">
+        </nav>
+    </header>
+    <div id="overlay" class="arya-fly-fade"></div>
+    <!-- Header end  -->
+
+    <div class="lg:p-[5rem] md:p-[5rem] sm:p-[5rem] xs:p-[3rem] p-[3rem]"></div>
+
+
+    <!-- Styler Start  -->
+    <div class="flex flex-wrap">
+        <div class="w-full sm:w-1/2 md:w-1/1 flex flex-col p-5">
+            <div class="bg-white rounded-lg drop-shadow-xl overflow-hidden flex-1 flex flex-col">
+                <div
+                    class="p-10 flex-1 flex flex-col bg-gradient-to-r from-red-500 to-green-500 bg-opacity-60 backdrop-filter backdrop-blur-lg">
+
+                    <label class="label mb-2">
+                        <span class="label-text text-xl text-white font-extrabold">INPUT</span>
+                    </label>
+                    <textarea id="src" data-gramm_editor="false"
+                        class="textarea focus:outline-none focus:ring-green-300 focus:ring-4 h-56 bg-white text-black leading-relaxed text-lg placeholder:text-slate-800"
+                        placeholder="Type or Paste Your Text" style="color: black;" id="inputTexts"></textarea>
+                </div>
+            </div>
+        </div>
+
+        <div class="w-full sm:w-1/2 md:w-1/1 flex flex-col p-5">
+            <div class="bg-white rounded-lg drop-shadow-xl overflow-hidden flex-1 flex flex-col">
+                <div class="p-10 flex-1 flex flex-col bg-gradient-to-r from-red-500 to-green-500">
+
+                    <label class="label mb-2">
+                        <span class="label-text text-xl text-white font-extrabold">OUTPUT</span>
+                    </label>
+                    <textarea id="output"
+                        class="textarea focus:outline-none focus:ring-green-300 focus:ring-4 h-56 bg-white text-black leading-relaxed text-lg placeholder:text-slate-800"
+                        placeholder="Output" style="color: black;" readonly></textarea>
+                    <div>
+
+                        <label class="mt-2 btn-ghost btn btn-circle">
+
+                            <!-- this hidden checkbox controls the state -->
+                            <input id="copyToClipboard" type="checkbox" hidden/>
+
+                            <svg class="swap-off fill-current" version="1.1" id="Layer_1"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                                y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
+                                xml:space="preserve">
+                                <path style="fill:#9ED368;" d="M0,256.006C0,397.402,114.606,512.004,255.996,512C397.394,512.004,512,397.402,512,256.006
+	C512.009,114.61,397.394,0,255.996,0C114.606,0,0,114.614,0,256.006z" />
+                                <path style="fill:#8BC052;" d="M509.06,294.925L297.553,83.419c-0.667-0.669-1.463-1.203-2.349-1.573
+	c-0.88-0.367-1.83-0.565-2.804-0.565H175.92c-4.025,0-7.28,3.26-7.28,7.28v36.4h-36.4c-4.025,0-7.28,3.26-7.28,7.28v291.2
+	c0,2.444,1.282,4.499,3.129,5.821c0.467,0.654,76.084,76.271,76.738,76.738c0.3,0.419,0.698,0.731,1.069,1.069
+	c16.205,3.216,32.95,4.933,50.1,4.932C384.162,512.003,490.315,417.845,509.06,294.925z" />
+                                <path style="fill:#F4F6F9;" d="M386.476,173.119c-0.37-0.885-0.905-1.683-1.573-2.351l-87.349-87.349
+	c-0.667-0.669-1.463-1.203-2.349-1.573c-0.88-0.367-1.83-0.566-2.804-0.566H175.92c-4.023,0-7.28,3.26-7.28,7.28v36.4h-36.4
+	c-4.023,0-7.28,3.26-7.28,7.28v291.2c0,4.02,3.257,7.28,7.28,7.28h203.84c4.025,0,7.28-3.26,7.28-7.28V387.04h36.4
+	c4.023,0,7.28-3.26,7.28-7.28V175.92C387.04,174.948,386.843,173.999,386.476,173.119z M299.68,106.134l62.506,62.506H299.68
+	V106.134z M328.8,416.16H139.52V139.52h29.12v240.24c0,4.02,3.257,7.28,7.28,7.28H328.8V416.16z M183.2,372.48V95.84h101.92v80.08
+	c0,4.02,3.257,7.28,7.28,7.28h80.08v189.28H183.2z" />
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                            </svg>
+
+                        </label>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Styler End  -->
+
+
+    <!-- Controller Start  -->
+    <div class="flex flex-wrap">
+        <div class="w-full sm:w-1/1 md:w-1/1 flex flex-col p-5 ">
+            <div class="bg-white rounded-lg drop-shadow-xl flex-1 flex flex-col">
+
+                <div class="overflow-y-auto max-h-[50vh] ">
+
+
+                    <div
+                        class="p-10 flex-1 flex flex-col bg-gradient-to-r from-red-500 to-green-500 bg-opacity-60 backdrop-filter backdrop-blur-lg">
+
+                        <label class="label mb-2">
+                            <span class="label-text text-xl text-white font-extrabold">Style Selector</span>
+                        </label>
+
+                        <div class="stylish_fonts divide-slate-400 divide-y">
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Controller End  -->
+
+
+    <style>
+
+
+    </style>
+
+    <script>
+        document.getElementById('copyToClipboard').addEventListener('click', function () {
+
+            var text = document.getElementById('output');
+            text.select();
+            document.execCommand('copy');
+
+        })
+    </script>
+
+
+    <!-- Styler by Anurag Deep  -->
+    <script src="public/js/custom/styler.js"></script>
+</body>
+
+</html>
